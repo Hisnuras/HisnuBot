@@ -133,3 +133,4 @@ dist
 .vs
 Obj/*
 bin/*
+appsettings.json
