@@ -4,7 +4,7 @@ using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using System.IO;
-//using HisnuBot.Loader; // Importer le namespace du loader
+using HisnuBot.Loader; // Importer le namespace du loader
 
 namespace HisnuBot
 {
@@ -32,7 +32,7 @@ namespace HisnuBot
 			_client.Log += Log;
 
 			// Charger les événements
-			//LoadEvents.RegisterEvents(_client);
+			LoadEvents.RegisterEvents(_client);
 
 			// Lire le token depuis le fichier de configuration
 			var token = _config["DiscordToken"];
